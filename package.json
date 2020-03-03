@@ -1,0 +1,22 @@
+{
+  "name": "js211_lodash-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laavang/JS211_Lodash-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laavang/JS211_Lodash-Practice/issues"
+  },
+  "homepage": "https://github.com/laavang/JS211_Lodash-Practice#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

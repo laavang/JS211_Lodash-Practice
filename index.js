@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-// _.chunk(), _.reverse(), _.without(), _.shuffle(), _.pebbles()
+// _.chunk(), _.reverse(), _.without(), _.shuffle(), 
 
 const users = 
 [{"id":1,"first_name":"Marena","last_name":"Overal","email":"moveral0@twitter.com","gender":"Female","ip_address":"144.192.217.71"},
@@ -15,16 +15,57 @@ const users =
 {"id":10,"first_name":"Ali","last_name":"Benadette","email":"abenadette9@businessweek.com","gender":"Male","ip_address":"111.71.124.244"}]
 ;
 
+
+// _.chunk
+
 let userNames = [];
 
 users.forEach (user => 
     userNames.push(user.first_name)
 );
 
-const makePairs = (userNames) => {
-    const pairs = _.chunk(userNames, 2);
+const makePairs = (array) => {
+    const pairs = _.chunk(array, 2);
     console.log(pairs);
     return pairs;
 }
 
 makePairs(userNames);
+
+
+
+// _.reverse
+
+let userNamesCopy = userNames;
+
+const reverseArray = (array) => {
+    let reversedArray = _.reverse(array);
+    console.log(reversedArray);
+    return reversedArray;
+}
+
+reverseArray(userNamesCopy);
+
+
+
+// _.without 
+
+const filterOut = (array, value) => {
+   let filteredArray = _.without(array, value);
+   console.log(filteredArray); 
+   return filteredArray;
+}
+
+filterOut(userNames, "Martino")
+
+
+
+// _.shuffle()
+
+const shuffleArray = (array) => {
+    let shuffledArray = _.shuffle(array);
+    console.log(shuffledArray); 
+    return shuffledArray;
+ }
+
+ shuffleArray(userNames);
